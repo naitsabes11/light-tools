@@ -1,11 +1,21 @@
 #! /bin/bash
+echo "gracias por usar el laboratorio, instalando light-tools...por favor espere.."
+echo =============================================================================
+echo "actualizando repositorios y dependencias"
+echo =============================================================================
+apt upgrade -y
+apt update -y
+pkg install fish -y
+echo "repositorios actualizados."
+echo =============================================================================
 echo "que herramienta quieres instalar"
-echo =======================================
+echo =============================================================================
+fish
 echo "1.metasplotit"
 echo "2.sqlmap"
 echo "3.nmap"
 echo "4.conitop"
-echo =======================================
+echo =============================================================================
 read opcion
 case $opcion in
    1)
